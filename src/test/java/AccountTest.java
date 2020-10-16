@@ -1,4 +1,3 @@
-import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -26,43 +25,36 @@ class AccountTest {
 	void onTryingToChangeMaxCreditWhenAmountIsBiggerThanBound_ReturnFalse() {
 		int prevCredit = account.getMaxCredit();
 
-		assertAll(
-			() -> assertFalse(account.setMaxCredit(BIG_AMOUNT)),
-			() -> assertEquals(prevCredit, account.getMaxCredit()),
-			() -> assertFalse(account.setMaxCredit(-BIG_AMOUNT)),
-			() -> assertEquals(prevCredit, account.getMaxCredit()));
+		assertFalse(account.setMaxCredit(BIG_AMOUNT));
+		assertEquals(prevCredit, account.getMaxCredit());
+		assertFalse(account.setMaxCredit(-BIG_AMOUNT));
+		assertEquals(prevCredit, account.getMaxCredit());
 	}
 
 	@Test
 	void onTryingToChangeMaxCreditWhenAllIsOk_ReturnTrue() {
-		assertAll(
-			() -> assertTrue(account.setMaxCredit(100)),
-			() -> assertEquals(100, account.getMaxCredit())
-		);
+		assertTrue(account.setMaxCredit(100));
+		assertEquals(100, account.getMaxCredit());
 	}
 
 	@Test
 	void onTryingToDepositOrWithdrawSumUpperBound_ReturnFalse() {
 		int prevBalance = account.getBalance();
 
-		assertAll(
-			() -> assertFalse(account.deposit(BIG_AMOUNT)),
-			() -> assertEquals(prevBalance, account.getBalance()),
-			() -> assertFalse(account.withdraw(BIG_AMOUNT)),
-			() -> assertEquals(prevBalance, account.getBalance())
-		);
+		assertFalse(account.deposit(BIG_AMOUNT));
+		assertEquals(prevBalance, account.getBalance());
+		assertFalse(account.withdraw(BIG_AMOUNT));
+		assertEquals(prevBalance, account.getBalance());
 	}
 
 	@Test
 	void onTryingToDepositOrWithdrawNegativeSum_ReturnFalse() {
 		int prevBalance = account.getBalance();
 
-		assertAll(
-			() -> assertFalse(account.deposit(-1)),
-			() -> assertEquals(prevBalance, account.getBalance()),
-			() -> assertFalse(account.withdraw(-1)),
-			() -> assertEquals(prevBalance, account.getBalance())
-		);
+		assertFalse(account.deposit(-1));
+		assertEquals(prevBalance, account.getBalance());
+		assertFalse(account.withdraw(-1));
+		assertEquals(prevBalance, account.getBalance());
 	}
 
 	@Test
@@ -70,12 +62,10 @@ class AccountTest {
 		account.block();
 		int prevBalance = account.getBalance();
 
-		assertAll(
-			() -> assertFalse(account.deposit(100)),
-			() -> assertEquals(prevBalance, account.getBalance()),
-			() -> assertFalse(account.withdraw(100)),
-			() -> assertEquals(prevBalance, account.getBalance())
-		);
+		assertFalse(account.deposit(100));
+		assertEquals(prevBalance, account.getBalance());
+		assertFalse(account.withdraw(100));
+		assertEquals(prevBalance, account.getBalance());
 	}
 
 	@Test
@@ -83,10 +73,8 @@ class AccountTest {
 		account.deposit(BOUND - 1);
 		int prevBalance = account.getBalance();
 
-		assertAll(
-			() -> assertFalse(account.deposit(2)),
-			() -> assertEquals(prevBalance, account.getBalance())
-		);
+		assertFalse(account.deposit(2));
+		assertEquals(prevBalance, account.getBalance());
 	}
 
 	@Test
@@ -94,36 +82,28 @@ class AccountTest {
 		account.withdraw(100);
 		account.setMaxCredit(10);
 
-		assertAll(
-			() -> assertFalse(account.unblock()),
-			() -> assertTrue(account.isBlocked())
-		);
+		assertFalse(account.unblock());
+		assertTrue(account.isBlocked());
 	}
 
 	@Test
 	void onTryingBlockWhenAllOk_ReturnTrue() {
 
-		assertAll(
-			() -> assertTrue(account.unblock()),
-			() -> assertFalse(account.isBlocked())
-		);
+		assertTrue(account.unblock());
+		assertFalse(account.isBlocked());
 	}
 
 	@Test
 	void onTryingWithdrawWhenAllOk_ReturnTrue() {
 
-		assertAll(
-			() -> assertTrue(account.withdraw(100)),
-			() -> assertEquals(-100, account.getBalance())
-		);
+		assertTrue(account.withdraw(100));
+		assertEquals(-100, account.getBalance());
 	}
 
 	@Test
 	void onTryingDepositWhenAllOk_ReturnTrue() {
 
-		assertAll(
-			() -> assertTrue(account.deposit(100)),
-			() -> assertEquals(100, account.getBalance())
-		);
+		assertTrue(account.deposit(100));
+		assertEquals(100, account.getBalance());
 	}
 }

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AccountTest" time="0.12" tests="11" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="D:\Studing\3_Course\Testing\5\target\test-classes;D:\Studing\3_Course\Testing\5\target\classes;C:\Users\Mi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;C:\Users\Mi\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Mi\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Mi\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\Mi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\Mi\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.4\bin"/>
+    <property name="sun.java.command" value="C:\Users\Mi\AppData\Local\Temp\surefire365755601682057932\surefirebooter16232707689163902699.jar C:\Users\Mi\AppData\Local\Temp\surefire365755601682057932 2020-10-16T19-34-21_374-jvmRun1 surefire18261762271607302997tmp surefire_07108063840995911608tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Studing\3_Course\Testing\5\target\test-classes;D:\Studing\3_Course\Testing\5\target\classes;C:\Users\Mi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;C:\Users\Mi\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Mi\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Mi\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\Mi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\Mi\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Mi"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.4"/>
+    <property name="idea.version2019.2.1" value="true"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Studing\3_Course\Testing\5"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Mi\AppData\Local\Temp\surefire365755601682057932\surefirebooter16232707689163902699.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.4+10-LTS"/>
+    <property name="user.name" value="Mi"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Mi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Mi\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.4"/>
+    <property name="user.dir" value="D:\Studing\3_Course\Testing\5"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Python27\;C:\Python27\Scripts;C:\Users\Mi\gcc\bin;C:\Users\Mi\gcc\libexec\gcc\x86_64-w64-mingw32\9.2.0;C:\Program Files\MinGW\gcc\bin;C:\Program Files\MinGW\gcc\libexec\gcc\x86_64-w64-mingw32\9.2.0;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11.0.4\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Heroku\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\dotnet\;C:\Users\Mi\AppData\Local\Microsoft\WindowsApps;C:\Users\Mi\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Program Files\Heroku\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk-11.0.4\bin;;C:\Users\Mi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mi\.dotnet\tools;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.4+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="onTryingToChangeMaxCreditWhenAmountIsBiggerThanBound_ReturnFalse" classname="AccountTest" time="0.002"/>
+  <testcase name="onTryingWithdrawWhenAllOk_ReturnTrue" classname="AccountTest" time="0.014"/>
+  <testcase name="onTryingToDepositSumWhenBalanceBecomesUpperBound_ReturnFalse" classname="AccountTest" time="0.048">
+    <failure message="expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at AccountTest.onTryingToDepositSumWhenBalanceBecomesUpperBound_ReturnFalse(AccountTest.java:76)
+]]></failure>
+  </testcase>
+  <testcase name="onTryingBlockWhenAllOk_ReturnTrue" classname="AccountTest" time="0.001"/>
+  <testcase name="onTryingToChangeMaxCreditWhenAllIsOk_ReturnTrue" classname="AccountTest" time="0.001"/>
+  <testcase name="onTryingDepositWhenAllOk_ReturnTrue" classname="AccountTest" time="0.003"/>
+  <testcase name="onTryingToDepositOrWithdrawSumUpperBound_ReturnFalse" classname="AccountTest" time="0.001"/>
+  <testcase name="onTryingToChangeMaxCreditWhenAccountNotBlocked_ReturnFalse" classname="AccountTest" time="0.005">
+    <failure message="expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at AccountTest.onTryingToChangeMaxCreditWhenAccountNotBlocked_ReturnFalse(AccountTest.java:21)
+]]></failure>
+  </testcase>
+  <testcase name="onTryingToDepositOrWithdrawNegativeSum_ReturnFalse" classname="AccountTest" time="0.001"/>
+  <testcase name="onBlockedAccount_ReturnFalse" classname="AccountTest" time="0"/>
+  <testcase name="onTryingUnblockWhenBalanceIsBelowCreditMaximum_ReturnFalse" classname="AccountTest" time="0.001">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at AccountTest.onTryingUnblockWhenBalanceIsBelowCreditMaximum_ReturnFalse(AccountTest.java:86)
+]]></failure>
+  </testcase>
+</testsuite>

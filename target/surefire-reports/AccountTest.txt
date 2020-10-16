@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: AccountTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.12 s <<< FAILURE! - in AccountTest
+onTryingToDepositSumWhenBalanceBecomesUpperBound_ReturnFalse  Time elapsed: 0.048 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at AccountTest.onTryingToDepositSumWhenBalanceBecomesUpperBound_ReturnFalse(AccountTest.java:76)
+
+onTryingToChangeMaxCreditWhenAccountNotBlocked_ReturnFalse  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at AccountTest.onTryingToChangeMaxCreditWhenAccountNotBlocked_ReturnFalse(AccountTest.java:21)
+
+onTryingUnblockWhenBalanceIsBelowCreditMaximum_ReturnFalse  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at AccountTest.onTryingUnblockWhenBalanceIsBelowCreditMaximum_ReturnFalse(AccountTest.java:86)
+
